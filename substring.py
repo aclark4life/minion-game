@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from sys import argv
 
-def make_substring(word):
+def substring(word):
     """
 Kevin and Stuart want to play the 'The Minion Game'.
 
@@ -20,16 +20,19 @@ A player gets +1 point for each occurrence of the substring in the string.
  
 For Example:
 
-String  = BANANA
+String = BANANA
+
 Kevin's vowel beginning word = ANA
+
 
 Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points.
     """
     print(word)
 
+
 if __name__ == "__main__":
     if len(argv) == 2:
-        make_substring(argv[1])
+        substring(argv[1])
         exit(0)
     else:
         print("Usage: %s <word>" % argv[0])
